@@ -14,14 +14,13 @@
   margin-left: auto;
   margin-right: auto;
 }
-.section{
-  flex-direction: column;
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
+
 header{
+  width: 100%;
+  display:flex;
+  justify-content: center;
+}
+footer{
   width: 100%;
   display:flex;
   justify-content: center;
@@ -31,32 +30,40 @@ header{
   display: flex;
   justify-content: space-between;
   border: 3px solid #1B1C3C;
-  margin: 10px;
+  margin: 0px, 10px, 0px, 10px;
   border-radius: 8px;
   padding: 2px 10px;
+  font-size: 14px;
+  position: fixed;
 }
 ul{
   list-style-type: circle;
   list-style-position: inside;
   padding-left: 5px;
+  font-size: 18px;
 }
 p{
   margin: 5px 5px;
+  font-size: 18px;
 }
 h1{
   font-family: "Helvetica", "Arial", sans-serif;
   font-weight: normal;
   color: #0F1A33;
-  margin: 15px 0px 5px 0px;
+  margin: 25px 0px 5px 0px;
 }
-footer{
+.foot{
+  width: 100%;
   border: 3px solid #1B1C3C;
   border-radius: 8px;
-  margin: 10px 8px 20px 8px
-
+  position: fixed;
+  bottom: 0;
+  display:flex;
+  padding: 0px 0px;
 }
 a:hover, a:link, a:visited, a:active{
   color: #4B4B4B;
+  text-decoration: none;
 }
 img{
   max-width: 25%;
@@ -65,11 +72,23 @@ img{
 .technical-intro{
   display: flex;
 }
+.empty_padding{
+  height: 60px;
+}
 
 /* Tablet Style */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
   .page {
-    width: 60%;
+    width: 80%;
+  }
+  .menu{
+    font-size: 20px;
+  }
+  h1{
+    margin: 35px 0px 5px 0px;
+  }
+  .foot{
+    font-size: 18px;
   }
 }
 /* Desktop Style */
@@ -77,5 +96,16 @@ img{
   .page{
     width: 960px;
     margin: 0 auto;
+  }
+  .menu{
+    font-size: 20px;
+    width:960px;
+  }
+  h1{
+    margin: 45px 0px 5px 0px;
+  }
+  .foot{
+    font-size: 20px;
+    width: 960px;
   }
 }
